@@ -64,7 +64,7 @@
       <!-- button section -->
       <div class="flex gap-10 justify-center pt-16 pb-8 bg-white">
         <button class="bg-buttonBg hover:bg-buttonBgHober rounded-lg px-8  py-4 font-semibold text-xl">Donation</button>
-        <button class="border hover:bg-bg border-[rgba(17,17,17,0.3)] rounded-lg px-8 py-4 font-medium text-xl text-primary">History</button>
+        <button id="history-button" class="border hover:bg-bg border-[rgba(17,17,17,0.3)] rounded-lg px-8 py-4 font-medium text-xl text-primary">History</button>
       </div>
 
      </header>
@@ -105,7 +105,7 @@
             <div class="space-y-4">
               <div class="inline-flex gap-1 items-center text-primary bg-bgBDT rounded-lg py-2.5 px-4">
                 <img src="./assets/coin.png" alt="">
-                <span>3600</span>
+                <span id="feni-amount">3600</span>
                 <span>BDT</span>
               </div>
               <!-- content title -->
@@ -113,9 +113,9 @@
               <!-- content -->
               <p class="text-primary font-light my-3 text-justify">The recent floods in Feni, Bangladesh, have caused widespread devastation, affecting thousands of families and leaving many in urgent need of assistance. Triggered by heavy monsoon rains and the release of water from upstream dams. As of August 2024, the flooding has impacted multiple districts, including Feni, Cumilla, and Chattogram. Reports indicate that approximately 1.5 million people are stranded due to rising waters, with many roads and highways completely submerged. The situation is dire and access to essential services like food and clean water.</p>
               <!-- amount input -->
-              <input placeholder="Write Donation Amount" class="border p-5 rounded-lg w-full" type="number" name="" id="">
+              <input placeholder="Write Donation Amount" class="border p-5 rounded-lg w-full" type="number" name="" id="feni-donate-input">
               <br>
-              <button class="bg-buttonBg hover:bg-buttonBgHober rounded-lg px-8  py-4 font-semibold text-xl w-full">Donate Now</button>
+              <button id="feni-donate-button" class="bg-buttonBg hover:bg-buttonBgHober rounded-lg px-8  py-4 font-semibold text-xl w-full">Donate Now</button>
             </div>
            </div>
            <!-- card three -->
@@ -128,7 +128,7 @@
             <div class="space-y-4">
               <div class="inline-flex gap-1 items-center text-primary bg-bgBDT rounded-lg py-2.5 px-4">
                 <img src="./assets/coin.png" alt="">
-                <span>4230</span>
+                <span id="quota-amount">4230</span>
                 <span>BDT</span>
               </div>
               <!-- content title -->
@@ -136,11 +136,14 @@
               <!-- content -->
               <p class="text-primary font-light my-3 text-justify">The Bangladesh Quota Movement, which reignited in June 2024, has been marked by widespread protests against the reinstatement of a controversial job quota system that many students believe undermines merit-based opportunities. As of early August 2024, reports indicate that over 20,000 individuals have been injured during the protests, with at least 215 confirmed deaths attributed to clashes with police. The situation has drawn significant attention from human rights organizations, highlighting the failure of authorities to provide adequate medical assistance to those injured during the protests. Notably, incidents where injured protesters were left without medical aid have sparked outrage and calls for accountability.</p>
               <!-- amount input -->
-              <input placeholder="Write Donation Amount" class="border p-5 rounded-lg w-full" type="number" name="" id="">
+              <input placeholder="Write Donation Amount" class="border p-5 rounded-lg w-full" type="number" name="" id="quota-donate-input">
               <br>
-              <button class="bg-buttonBg hover:bg-buttonBgHober rounded-lg px-8  py-4 font-semibold text-xl w-full">Donate Now</button>
+              <button id="quota-donate-button" class="bg-buttonBg hover:bg-buttonBgHober rounded-lg px-8  py-4 font-semibold text-xl w-full">Donate Now</button>
             </div>
            </div>
+
+           <!-- history section -->
+            
 
       </main>
 
