@@ -56,7 +56,7 @@
         </div>
         <div class="flex gap-1 items-center text-primary font-medium text-xl">
           <img src="./assets/coin.png" alt="">
-          <span >5500</span>
+          <span id="my-amount">5500</span>
           <span>BDT</span>
         </div>
         </div>
@@ -82,7 +82,7 @@
             <div class="space-y-4">
               <div class="inline-flex gap-1 items-center text-primary bg-bgBDT rounded-lg py-2.5 px-4">
                 <img src="./assets/coin.png" alt="">
-                <span>0</span>
+                <span id="noakhali-amount">1000</span>
                 <span>BDT</span>
               </div>
               <!-- content title -->
@@ -90,9 +90,9 @@
               <!-- content -->
               <p class="text-primary font-light my-3 text-justify">The recent floods in Noakhali, Bangladesh, have caused significant devastation, displacing thousands and leaving many without basic necessities. The flooding, exacerbated by continuous heavy rainfall for affected families to secure food, clean water. The situation remains critical as many families are still stranded. Donations are crucial at this time to help provide shelter and food packs to those who have lost everything.</p>
               <!-- amount input -->
-              <input placeholder="Write Donation Amount" class="border p-5 rounded-lg w-full" type="number" name="" id="">
+              <input id="noakhali-donate-input" placeholder="Write Donation Amount" class="border p-5 rounded-lg w-full" type="number" name="" id="">
               <br>
-              <button class="bg-buttonBg hover:bg-buttonBgHober rounded-lg px-8  py-4 font-semibold text-xl w-full">Donate Now</button>
+              <button id="noakhali-donate-button" class="bg-buttonBg hover:bg-buttonBgHober rounded-lg px-8  py-4 font-semibold text-xl w-full">Donate Now</button>
             </div>
            </div>
            <!-- card two -->
@@ -148,5 +148,7 @@
       <footer class="bg-bg h-32">
 
       </footer>
+      <script src="./js/donation.js"></script>
+      <script src="./js/utilitiesFunction.js"></script>
   </body>
 </html>
