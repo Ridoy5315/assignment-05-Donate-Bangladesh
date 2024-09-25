@@ -3,7 +3,7 @@ document.getElementById("noakhali-donate-button").addEventListener("click", func
     const noakhaliInput = getValueById("noakhali-donate-input");
 
     if(isNaN(noakhaliInput)){
-      alert("Please type a correct amount");
+      alert("Invalid donation amount");
       return;
     }
 
@@ -24,14 +24,16 @@ document.getElementById("noakhali-donate-button").addEventListener("click", func
       // adding the event to history
       const realTime = currentTime();
       const div = document.createElement("div");
-      div.classList.add("border", "p-8", "rounded-xl", "mb-5");
+      div.classList.add("border", "lg:p-8", "p-4", "rounded-xl", "lg:mb-5", "mb-3");
       div.innerHTML = `
-      <h5 class="font-bold text-xl mb-3">${noakhaliInput} Take is Donated for the affected of Noakhali(Bangladesh) disaster area</h5>
-      <p class="font-light">Date: <span>${realTime}</span></p>
+      <h5 class="font-bold lg:text-xl text-lg lg;mb-3 mb-2">${noakhaliInput} Take is Donated for the affected of Noakhali(Bangladesh) disaster area</h5>
+      <p class="font-light lg:text-base text-sm bg-slate-100 p-2 rounded-lg">Date: <span>${realTime}</span></p>
       `
       document.getElementById("history-section").appendChild(div);
 
       document.getElementById("my_modal_1").showModal();
+
+      document.getElementById("noakhali-donate-input").value = '';
     } 
     else {
       alert("You typed the wrong number. Please type the correct number.");
@@ -43,7 +45,7 @@ document.getElementById("feni-donate-button").addEventListener("click", function
     const feniInput = getValueById("feni-donate-input");
 
     if(isNaN(feniInput)){
-      alert("Please type a correct amount");
+      alert("Invalid donation amount");
       return;
     }
 
@@ -63,14 +65,16 @@ document.getElementById("feni-donate-button").addEventListener("click", function
       // adding the event to history
       const realTime = currentTime();
       const div = document.createElement("div");
-      div.classList.add("border", "p-8", "rounded-xl", "mb-5");
+      div.classList.add("border", "lg:p-8", "p-4", "rounded-xl", "lg:mb-5", "mb-3");
       div.innerHTML = `
-      <h5 class="font-bold text-xl mb-3">${feniInput} Take is Donated for Flood affected people of Feni, Bangladesh</h5>
-      <p class="font-light">Date: <span>${realTime}</span></p>
+      <h5 class="font-bold lg:text-xl text-lg lg;mb-3 mb-2"">${feniInput} Take is Donated for Flood affected people of Feni, Bangladesh</h5>
+      <p class="font-light lg:text-base text-sm bg-slate-100 p-2 rounded-lg">Date: <span>${realTime}</span></p>
       `
       document.getElementById("history-section").appendChild(div);
 
       document.getElementById("my_modal_1").showModal();
+
+      document.getElementById("feni-donate-input").value = '';
 
     } else {
       alert("You typed the wrong number. Please type the correct number.");
@@ -82,7 +86,7 @@ document.getElementById("quota-donate-button").addEventListener("click", functio
     const quotaInput = getValueById("quota-donate-input");
 
     if(isNaN(quotaInput)){
-      alert("Please type a correct amount");
+      alert("Invalid donation amount");
       return;
     }
 
@@ -102,14 +106,16 @@ document.getElementById("quota-donate-button").addEventListener("click", functio
       // adding the event to history
       const realTime = currentTime();
       const div = document.createElement("div");
-      div.classList.add("border", "p-8", "rounded-xl", "mb-5");
+      div.classList.add("border", "lg:p-8", "p-4", "rounded-xl", "lg:mb-5", "mb-3");
       div.innerHTML = `
-      <h5 class="font-bold text-xl mb-3">${quotaInput} Take is Donated to injured students of Bangladesh quota reform movement</h5>
-      <p class="font-light">Date: <span>${realTime}</span></p>
+      <h5 class="font-bold lg:text-xl text-lg lg;mb-3 mb-2"">${quotaInput} Take is Donated to injured students of Bangladesh quota reform movement</h5>
+      <p class="font-light lg:text-base text-sm bg-slate-100 p-2 rounded-lg">Date: <span>${realTime}</span></p>
       `
       document.getElementById("history-section").appendChild(div);
 
       document.getElementById("my_modal_1").showModal();
+
+      document.getElementById("quota-donate-input").value = '';
     } else {
       alert("You typed the wrong number. Please type the correct number.");
     }
