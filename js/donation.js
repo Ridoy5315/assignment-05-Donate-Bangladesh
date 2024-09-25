@@ -35,7 +35,7 @@ document.getElementById("noakhali-donate-button").addEventListener("click", func
 
     } 
     else {
-      alert("You typed the wrong number. Please type the correct number.");
+      alert("You added the invalid amount.");
     }
     document.getElementById("noakhali-donate-input").value = '';
   });
@@ -75,7 +75,7 @@ document.getElementById("feni-donate-button").addEventListener("click", function
       document.getElementById("my_modal_1").showModal();
 
     } else {
-      alert("You typed the wrong number. Please type the correct number.");
+      alert("You added the invalid amount.");
     }
     document.getElementById("feni-donate-input").value = '';
   });
@@ -115,7 +115,7 @@ document.getElementById("quota-donate-button").addEventListener("click", functio
       document.getElementById("my_modal_1").showModal();
 
     } else {
-      alert("You typed the wrong number. Please type the correct number.");
+      alert("You added the invalid amount.");
     }
     document.getElementById("quota-donate-input").value = '';
   });
