@@ -33,11 +33,11 @@ document.getElementById("noakhali-donate-button").addEventListener("click", func
 
       document.getElementById("my_modal_1").showModal();
 
-      document.getElementById("noakhali-donate-input").value = '';
     } 
     else {
       alert("You typed the wrong number. Please type the correct number.");
     }
+    document.getElementById("noakhali-donate-input").value = '';
   });
 
   // card two
@@ -74,11 +74,10 @@ document.getElementById("feni-donate-button").addEventListener("click", function
 
       document.getElementById("my_modal_1").showModal();
 
-      document.getElementById("feni-donate-input").value = '';
-
     } else {
       alert("You typed the wrong number. Please type the correct number.");
     }
+    document.getElementById("feni-donate-input").value = '';
   });
 
   // card three
@@ -115,10 +114,10 @@ document.getElementById("quota-donate-button").addEventListener("click", functio
 
       document.getElementById("my_modal_1").showModal();
 
-      document.getElementById("quota-donate-input").value = '';
     } else {
       alert("You typed the wrong number. Please type the correct number.");
     }
+    document.getElementById("quota-donate-input").value = '';
   });
 
 
